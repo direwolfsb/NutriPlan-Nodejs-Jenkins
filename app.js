@@ -2,6 +2,7 @@ import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
 
+// Load environment variables from .env file
 dotenv.config();
 
 const app = express();
@@ -25,13 +26,16 @@ app.get('/meals', async (req, res) => {
 
   try {
     const response = await axios.get(
-      `https://api.spoonacular.com/mealplanner/generate?apiKey=${apiKey}&timeFrame=day&targetCalories=${calories}`
+      `https://api.spoonacular.com/mealplanner/generate`,
+      {
+        params: {
+          apiKey: apiKey,
+          timeFrame: 'day',
+          targetCalories: calories,
+        },
+      }
     );
-    console.log(response)
     const mealData = response.data;
-    mealData.forEach(meal => {
-        
-    });
     res.render('index', { mealData });
   } catch (error) {
     console.error('Error fetching meal data:', error);
