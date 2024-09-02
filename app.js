@@ -2,7 +2,7 @@ import express from 'express';
 import axios from 'axios';
 import dotenv from 'dotenv';
 
-// Load environment variables from .env file
+// Load environment variables from .env file.
 dotenv.config();
 
 const app = express();
