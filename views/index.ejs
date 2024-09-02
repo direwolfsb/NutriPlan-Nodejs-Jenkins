@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/index.css">
+  <title>NutriPlan</title>
+</head>
+<body>
+  <div class="App">
+    <section class="controls">
+      <form action="/meals" method="get">
+        <input
+          type="number"
+          name="calories"
+          class="calinput"
+          placeholder="Calories (e.g. 2000)"
+          required
+        />
+        <button type="submit">Get Daily Meal Plan</button>
+      </form>
+    </section>
+
+    <% if (mealData) { %>
+      <main>
+        <section class="nutrients">
+          <h1>Macros</h1>
+          <ul>
+            <li>Calories: <%= mealData.nutrients.calories.toFixed(0) %></li>
+            <li>Carbohydrates: <%= mealData.nutrients.carbohydrates.toFixed(0) %></li>
+            <li>Fat: <%= mealData.nutrients.fat.toFixed(0) %></li>
+            <li>Protein: <%= mealData.nutrients.protein.toFixed(0) %></li>
+          </ul>
+        </section>
+
+        <section class="meals">
+          <% mealData.meals.forEach(meal => { %>
+            <article>
+              <h1><%= meal.title %></h1>
+              
+              <ul class="instructions">
+                <li>Preparation time: <%= meal.readyInMinutes %> minutes</li>
+                <li>Number of servings: <%= meal.servings %></li>
+              </ul>
+              <a href="<%= meal.sourceUrl %>">Go to Recipe</a>
+            </article>
+          <% }) %>
+        </section>
+      </main>
+    <% } %>
+  </div>
+</body>
+</html>
