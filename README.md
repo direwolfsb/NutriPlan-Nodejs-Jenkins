@@ -1,4 +1,4 @@
-Here’s the updated README.md content that includes the deployment information:
+
 
 ---
 
@@ -132,3 +132,8 @@ Thank you for using NutriPlan! We hope this application helps you achieve your h
 ---
 
 You can copy and paste this updated README.md content into your GitHub repository. This version includes the deployment information, providing users with a direct link to access your live application on the EC2 instance.
+
+![jenskins build](https://github.com/user-attachments/assets/d3cee3de-d51d-4410-b2f6-75fb70328269)
+
+
+![app](https://github.com/user-attachments/assets/8cc9bd9d-9053-484a-a3f8-db55ae666a01)
