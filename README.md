@@ -133,6 +133,11 @@ Thank you for using NutriPlan! We hope this application helps you achieve your h
 
 You can copy and paste this updated README.md content into your GitHub repository. This version includes the deployment information, providing users with a direct link to access your live application on the EC2 instance.
 
+Flowchart :
+![Untitled](https://github.com/user-attachments/assets/0e1543ed-1d45-48ab-afa7-24a308e5d378)
+
+
+
 ![jenskins build](https://github.com/user-attachments/assets/d3cee3de-d51d-4410-b2f6-75fb70328269)
 
 
