@@ -1,6 +1,6 @@
 Certainly! Below is a full `README.md` that you can copy and paste directly into your GitHub repository:
 
-```markdown
+
 # NutriPlan Node.js Application
 
 ## Overview
