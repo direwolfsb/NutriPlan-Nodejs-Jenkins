@@ -4,6 +4,8 @@
 
 # NutriPlan Node.js-Jenkins-AWS Application
 
+![app](https://github.com/user-attachments/assets/8cc9bd9d-9053-484a-a3f8-db55ae666a01)
+
 ## Overview
 NutriPlan is a Node.js application designed to generate daily meal plans based on a target calorie intake. The project leverages modern CI/CD practices, using Jenkins for continuous integration and deployment, Docker for containerization, and GitHub for version control. The system is triggered automatically using GitHub webhooks, ensuring that the latest code is always tested and deployed efficiently.
 
@@ -133,12 +135,12 @@ Thank you for using NutriPlan! We hope this application helps you achieve your h
 
 You can copy and paste this updated README.md content into your GitHub repository. This version includes the deployment information, providing users with a direct link to access your live application on the EC2 instance.
 
-Flowchart :
+## Flowchart :
 ![Untitled](https://github.com/user-attachments/assets/0e1543ed-1d45-48ab-afa7-24a308e5d378)
 
 
-
+## Jenkins Server
 ![jenskins build](https://github.com/user-attachments/assets/d3cee3de-d51d-4410-b2f6-75fb70328269)
 
 
-![app](https://github.com/user-attachments/assets/8cc9bd9d-9053-484a-a3f8-db55ae666a01)
+
